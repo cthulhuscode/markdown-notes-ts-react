@@ -2,14 +2,14 @@
   "name": "markdown-notes",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://cthulhuscode.github.io/markdown-notes-ts-react",
+  "homepage": "https://cthulhuscode.github.io/markdown-notes-ts-react/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
